@@ -23,6 +23,7 @@ def get_content_by_date(url_18,url,date):
     except AttributeError as e:
         print(e)
     else:
+        #pprint(bs)
         contentAll=[]
         cln=re.compile(r'\n| |\xa0|\\xa0|\u3000|\\u3000|\\u0020|\u0020|\t|\r')
         #get div content
@@ -72,12 +73,15 @@ def get_content_by_date(url_18,url,date):
             elif s_month<u_month or s_month==u_month and s_date<u_date:
                 print(f'Today is{div.find("div", class_="date").get_text()} smaller.')
                 break
+            else:
+                print('nothing')
+        #pprint(contentAll)
         return contentAll
 
 
 
 Sdate = input("Enter The Date You Prefer to search:")
-a=get_content_by_date("https://www.ptt.cc/ask/over18","https://www.ptt.cc/bbs/Gossiping/index38862.html",Sdate)
+a=get_content_by_date("https://www.ptt.cc/ask/over18","https://www.ptt.cc/bbs/Gossiping/index39138.html",Sdate)
 with codecs.open('content.csv','w',encoding='UTF-8') as csvFile:
     fieldnames=['date','pushNum','title','author']
     writer=csv.DictWriter(csvFile,fieldnames=fieldnames)
