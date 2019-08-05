@@ -10,6 +10,8 @@
   ```
 + 輸出檔案格式 : CSV(content.csv)
 + 結果部份圖 :
+  ![image](https://github.com/Chao-Eric/crawlerPTT/blob/master/img/content_result.PNG)
+
 
 ---
 ## crawler_faDaChai.py
@@ -22,7 +24,9 @@
        Enter the ending date:7/31
        Enter the keyword you prefer to search:問卦
   ```
-+輸出檔案格式: CSV(faDaChai.csv)
++ 輸出檔案格式: CSV(faDaChai.csv)
++ 結果部分圖 :
+    ![image](https://github.com/Chao-Eric/crawlerPTT/blob/master/img/faDaChai_result.PNG)
 
 ---
 ## crawler_article.py
@@ -35,4 +39,6 @@
   + 回應(推(pushTag)+回覆者ID(pushID)+回覆內容(pushContent)+回覆IP和時間(pushTime))
 + 輸出檔案格式: TXT(article.txt)
 + 結果部分圖 : 
+  ![image](https://github.com/Chao-Eric/crawlerPTT/blob/master/img/article_result_1.PNG)
+  ![image](https://github.com/Chao-Eric/crawlerPTT/blob/master/img/article_result_2.PNG)
                              
